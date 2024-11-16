@@ -1,6 +1,3 @@
-##
- # reset.mcfunction
- # 
- #
- # Created by .
-##
+say reset
+
+scoreboard players set #isRunning data 0
