@@ -1,0 +1,1 @@
+$execute as @a[tag=team$(team)] run function itemforce:checkitem with entity @e[type=item_display,tag=team_item_$(team),limit=1] item

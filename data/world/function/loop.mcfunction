@@ -1,4 +1,4 @@
-execute if score #isRunning data matches 1 as @a at @s run function forceitem:timer
+execute if score #isRunning data matches 1 as @a at @s run function itemforce:timer
 
 
 
