@@ -1,4 +1,13 @@
+execute as @a[x=-5,y=312,z=-5,dx=2,dy=3,dz=2] at @s run team join team1 @s
+execute as @a[x=3,y=312,z=-5,dx=2,dy=3,dz=2] at @s run team join team2 @s
+execute as @a[x=3,y=312,z=3,dx=2,dy=3,dz=2] at @s run team join team3 @s
+execute as @a[x=-5,y=312,z=3,dx=2,dy=3,dz=2] at @s run team join team4 @s
 
+gamerule fallDamage false
+tellraw @a [{color:"#f2c57d",text:"Falldamage is deactivated for the first 30 seconds"}]
+execute as @a at @s run playsound block.note_block.bit player @s ~ ~ ~ 1 0.4
+schedule function itemforce:activatefalldamage 30s
+fill -6 311 -6 6 319 6 air
 
 scoreboard players set #isRunning data 1
 

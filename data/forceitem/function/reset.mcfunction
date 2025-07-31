@@ -13,6 +13,11 @@ scoreboard players set m timer 0
 scoreboard players set S timer 0
 scoreboard players set s timer 0
 
+scoreboard players reset team1 score
+scoreboard players reset team2 score
+scoreboard players reset team3 score
+scoreboard players reset team4 score
+
 tag @a remove team1
 tag @a remove team2
 tag @a remove team3
