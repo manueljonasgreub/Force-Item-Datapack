@@ -25,6 +25,8 @@ summon minecraft:item_display 0 -63 0 {Tags:["team_item","team_item_2"],data:{"t
 summon minecraft:item_display 0 -63 0 {Tags:["team_item","team_item_3"],data:{"team":"3"}}
 summon minecraft:item_display 0 -63 0 {Tags:["team_item","team_item_4"],data:{"team":"4"}}
 
+recipe give @a *
+
 tag @a[team=team1] add team1
 tag @a[team=team2] add team2
 tag @a[team=team3] add team3
@@ -34,5 +36,11 @@ bossbar set minecraft:team1 players @a[tag=team1]
 bossbar set minecraft:team2 players @a[tag=team2]
 bossbar set minecraft:team3 players @a[tag=team3]
 bossbar set minecraft:team4 players @a[tag=team4]
+
+execute as @a[tag=team1] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:true,Tags:["display_team","display_team1"],DisabledSlots:4144959}
+execute as @a[tag=team2] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:true,Tags:["display_team","display_team2"],DisabledSlots:4144959}
+execute as @a[tag=team3] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:true,Tags:["display_team","display_team3"],DisabledSlots:4144959}
+execute as @a[tag=team4] at @s run summon armor_stand ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Marker:1b,Invisible:true,Tags:["display_team","display_team4"],DisabledSlots:4144959}
+
 
 execute as @e[tag=team_item] at @s run function itemforce:getnewitem with entity @s data

@@ -1,4 +1,5 @@
 kill @e[tag=team_item]
+kill @e[tag=display_team]
 
 scoreboard players set #isRunning data 0
 
