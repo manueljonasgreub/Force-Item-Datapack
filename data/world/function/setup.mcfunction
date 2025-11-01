@@ -1,8 +1,12 @@
 function world:loop
+
+gamerule sendCommandFeedback false
+
 scoreboard objectives add data dummy
 scoreboard objectives add score dummy
 scoreboard objectives add timer dummy
 scoreboard objectives add joker minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add team trigger
 
 bossbar add team1 ""
 bossbar set minecraft:team1 max 1

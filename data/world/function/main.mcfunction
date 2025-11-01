@@ -13,3 +13,9 @@ execute as @a[tag=team1] at @s run tp @e[type=armor_stand,tag=display_team1,limi
 execute as @a[tag=team2] at @s run tp @e[type=armor_stand,tag=display_team2,limit=1,sort=nearest] ~ ~1.5 ~
 execute as @a[tag=team3] at @s run tp @e[type=armor_stand,tag=display_team3,limit=1,sort=nearest] ~ ~1.5 ~
 execute as @a[tag=team4] at @s run tp @e[type=armor_stand,tag=display_team4,limit=1,sort=nearest] ~ ~1.5 ~
+
+
+execute as @a[scores={team=1}] run function itemforce:jointeam {"id":"1"}
+execute as @a[scores={team=2}] run function itemforce:jointeam {"id":"2"}
+execute as @a[scores={team=3}] run function itemforce:jointeam {"id":"3"}
+execute as @a[scores={team=4}] run function itemforce:jointeam {"id":"4"}
